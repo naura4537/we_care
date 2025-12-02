@@ -1,0 +1,1962 @@
+/* ===============================================
+   DASAR & VARIABEL WARNA (dari style.css)
+=============================================== */
+/* ===============================================
+    DASAR & VARIABEL WARNA (dari style.css)
+=============================================== */
+:root {
+    --color-dark: #016B61;       /* Hijau Tosca Gelap (Sidebar/Button) */
+    --color-medium: #70B2B2;     /* Hijau Tosca Sedang */
+    --color-light: #9ECFD4;      /* Hijau Tosca Terang */
+    --color-bg: #E5E9C5;         /* Krem / Kuning Muda (Background Konten Utama) */
+    --color-bg-light: #f9f9f9;
+    --color-text: #333;
+    --color-white: #ffffff;
+    --color-sidebar-link: #dff; /* Warna Teks Link Sidebar */
+    --color-sidebar-hover: #038a7c; /* Warna Hover Link Sidebar */
+    --color-primary: #f0f0f0; /* Contoh warna primer */
+    --color-dark: #016B61;    /* Hijau Tosca Gelap */
+    --color-medium: #00B1B1;  /* Hijau Tosca Medium (untuk border) */
+    --color-accent: #66CCCC;  /* HIJAU TOSCA TERANG (Untuk avatar, navbar, dll) */
+    --color-white: #ffffff;
+    --color-text-dark: #333333;
+}
+/* ... (kode lain) ... */
+
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: var(--color-text);
+    background-color: var(--color-bg-light);
+}
+/* ===============================================
+  STYLING AUTENTIKASI (LOGIN & REG)
+=============================================== */
+.auth-body { 
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 24px;
+    box-sizing: border-box;
+}
+
+/* ... (kode lain) ... */
+
+/* ===============================================
+ TAMBAHKAN SEMUA KODE DI BAWAH INI
+===============================================
+*/
+
+.auth-form-container {
+    background: #ffffff;
+    padding: 2.5rem; /* Padding lebih besar */
+    border-radius: 12px; /* Lebih bulat */
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08); /* Shadow lebih halus */
+    width: 100%;
+    max-width: 420px;
+    box-sizing: border-box;
+}
+
+.auth-form-container h2 {
+    color: var(--color-dark); /* Pakai variabel warna Anda */
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-size: 1.75rem;
+}
+
+.auth-sub-text {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #666;
+}
+
+.auth-link {
+    color: var(--color-dark);
+    font-weight: 500;
+    text-decoration: none;
+}
+.auth-link:hover {
+    text-decoration: underline;
+}
+
+.form-group {
+    margin-bottom: 1.25rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    color: #333;
+}
+
+.form-input {
+    width: 100%;
+    padding: 0.85rem 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-sizing: border-box; /* Ini penting agar padding tidak merusak layout */
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.form-input:focus {
+    border-color: var(--color-medium);
+    box-shadow: 0 0 0 3px rgba(112, 178, 178, 0.2); /* Efek glow */
+    outline: none;
+}
+
+.form-button {
+    width: 100%;
+    padding: 0.85rem 1rem;
+    border: none;
+    border-radius: 8px;
+    
+    /* Warna Awal: Hijau Muda */
+    background-color: var(--color-medium); 
+    color: var(--color-white);
+    
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 1rem;
+    
+    /* Durasi Transisi Lebih Lambat */
+    transition: background-color 0.4s ease; /* Dari 0.3s menjadi 0.4s */
+    
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+}
+
+.form-button:hover {
+    /* Warna Hover: Hijau Tosca Gelap (Kontras Maksimal) */
+    background-color: var(--color-dark); 
+}
+/* ===============================================
+    STYLING AUTENTIKASI (LOGIN & REG)
+=============================================== */
+.auth-container {
+    display: flex; /* Menggunakan Flexbox untuk layout utama */
+    min-height: 100vh; /* Memastikan container mengambil seluruh tinggi viewport */
+    background-color: #f0f2f5; /* Background abu-abu muda jika ada celah */
+}
+
+.auth-left-panel {
+    flex: 1; /* Panel kiri akan mengisi ruang yang tersedia */
+    background-color: var(--color-white); /* Background putih */
+    display: flex;
+    flex-direction: column; /* Untuk menata konten secara vertikal */
+    justify-content: center; /* Memusatkan konten secara vertikal */
+    align-items: center; /* Memusatkan konten secara horizontal */
+    padding: 2rem;
+    color: var(--color-text);
+    text-align: center;
+}
+
+.auth-left-panel img {
+    max-width: 180px; /* Ukuran logo yang proporsional */
+    height: auto;
+    margin-bottom: 1.5rem;
+}
+
+.auth-left-panel h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
+
+.auth-left-panel p {
+    font-size: 1.1rem;
+    opacity: 0.9;
+    max-width: 400px;
+}
+
+.auth-right-panel {
+    flex: 1; /* Panel kanan juga akan mengisi ruang yang tersedia */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    background-color: var(--color-dark); /* HIJAU TOSCA */
+}
+
+/* Penyesuaian untuk form-container agar tidak terlalu lebar */
+.auth-form-container {
+    background: none; /* Hapus background putih */
+    padding: 2.5rem;
+    border-radius: 0px; /* Hapus atau kurangi border-radius */
+    box-shadow: none; /* Hapus shadow */
+    width: 100%;
+    max-width: 420px;
+    box-sizing: border-box;
+}
+
+.auth-form-container h2 {
+    color: var(--color-white); /* Ubah judul form menjadi putih */
+}
+
+.auth-sub-text {
+    color: var(--color-light); /* Ubah sub-teks menjadi putih agak terang */
+}
+
+.auth-form-container label {
+    color: var(--color-white); /* Ubah label input menjadi putih */
+}
+
+/* Ubah warna link login/register di bawah judul */
+.auth-link {
+    color: var(--color-white); /* Ubah warna link menjadi putih */
+}
+.auth-link:hover {
+    color: var(--color-light); /* Hover lebih terang */
+}
+
+/* Sesuaikan warna placeholder input jika perlu */
+.form-input::placeholder {
+    color: #a0a0a0; /* Contoh warna placeholder terang */
+}
+
+/* Jika ada pesan error validasi, pastikan warnanya terlihat di background hijau tosca */
+.text-red-500 { /* Ini adalah class default Laravel untuk error */
+    color: var(--color-yellow); /* Atau warna terang lain */
+}
+
+/* ... (Kode CSS untuk h2, sub-text, link, form-group, form-input, form-button tetap sama,
+     letakan di bawah kode baru di atas) ... */
+
+/* Media Queries untuk tampilan mobile */
+@media (max-width: 768px) {
+    .auth-container {
+        flex-direction: column; /* Susun vertikal di layar kecil */
+    }
+
+    .auth-left-panel {
+        height: 250px; /* Tinggi panel kiri di mobile */
+        padding: 1.5rem;
+    }
+
+    .auth-left-panel img {
+        max-width: 120px;
+    }
+
+    .auth-left-panel h1 {
+        font-size: 1.8rem;
+    }
+
+    .auth-left-panel p {
+        font-size: 0.9rem;
+    }
+
+    .auth-right-panel {
+        padding: 1.5rem;
+    }
+
+    .auth-form-container {
+        padding: 1.8rem;
+    }
+}
+
+/* ===============================================
+  CSS DARI <style> DI header.php
+=============================================== */
+.navbar {
+background: #ffffff;
+color: #1b4332;
+padding: 15px 30px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+box-shadow: 0 4px 15px rgba(0,0,0,0.07);
+position: sticky;
+top: 0;
+z-index: 100;
+}
+.logo {
+font-size: 24px;
+font-weight: 900;
+letter-spacing: 1px;
+color: #1b4332;
+display: flex;
+align-items: center;
+gap: 10px;
+}
+.logo img {
+height: 60px;
+width: auto;
+object-fit: contain;
+}
+/* ... (sisa CSS dari header.php) ... */
+.notification-list::-webkit-scrollbar-thumb:hover {
+background: #999;
+}
+
+/* ===============================================
+  CSS DARI <style> DI keuangan.php
+=============================================== */
+.laporan-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    }
+.laporan-header {
+    background: linear-gradient(135deg, #016B61 0%, #70B2B2 100%);
+    color: white;
+    padding: 30px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
+    }
+/* ... (sisa CSS dari keuangan.php) ... */
+@media (max-width: 768px) {
+    .filter-laporan {
+    flex-direction: column;
+    align-items: stretch;
+    }
+    .tabel-laporan-wrapper {
+    overflow-x: auto;
+    }
+    .summary-laporan {
+    grid-template-columns: 1fr;
+    }
+}
+
+/* ===============================================
+  CSS DARI <style> DI komentar.php
+=============================================== */
+.komentar-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background: #f8f9fa;
+    min-height: 100vh;
+    }
+.filter-tabs {
+    background: white;
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    display: flex;
+    gap: 15px;
+    }
+/* ... (sisa CSS dari komentar.php) ... */
+@media (max-width: 768px) {
+    .filter-tabs {
+    flex-direction: column;
+    }
+    .komentar-header {
+    flex-direction: column;
+    align-items: flex-start;
+    }
+    .rating-stars {
+    margin-top: 10px;
+    }
+}
+
+/* ===============================================
+  CSS DARI <style> DI pengaturan.php
+=============================================== */
+.pengaturan-container {
+    padding: 20px;
+    max-width: 100%;
+    margin: 0 auto;
+    background: #f8f9fa;
+    min-height: 100vh;
+    }
+.page-header {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    }
+/* ... (sisa CSS dari pengaturan.php) ... */
+@media (max-width: 768px) {
+    .profile-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    }
+    .profile-actions {
+    flex-direction: column;
+    }
+    .profile-actions button {
+    width: 100%;
+    }
+    .page-header {
+    flex-direction: column;
+    gap: 15px;
+    }
+    .search-box {
+    margin: 0;
+    max-width: 100%;
+    }
+}
+.profile-wrapper {
+    display: flex; /* Menggunakan Flexbox */
+    align-items: center; /* Pusatkan vertikal agar sejajar */
+    gap: 10px; /* Jarak antara teks dan avatar */
+}
+
+.profile-wrapper .welcome-text {
+    font-weight: 500;
+    color: var(--color-text);
+    /* Hapus margin-right di sini, kita pakai gap di profile-wrapper */
+    font-size: 0.95rem;
+}
+/* ===============================================
+  CSS DARI <style> DI statistik.php
+=============================================== */
+.statistik-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background: #f8f9fa;
+    min-height: 100vh;
+    }
+.statistik-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    }
+/* ... (sisa CSS dari statistik.php) ... */
+@media (max-width: 992px) {
+    .statistik-content {
+    grid-template-columns: 1fr;
+    }
+    .filter-form {
+    flex-direction: column;
+    }
+    .filter-form .form-group {
+    width: 100%;
+    }
+}
+
+/* ===============================================
+  CSS DARI <style> DI transaksi.php
+=============================================== */
+.transaksi-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background: #f0f4f0;
+    min-height: 100vh;
+}
+.transaksi-header {
+    background: linear-gradient(135deg, #2d6a4f 0%, #1b4332 100%);
+    color: white;
+    padding: 30px;
+    border-radius: 15px;
+    margin-bottom: 25px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(45, 106, 79, 0.3);
+}
+/* ... (sisa CSS dari transaksi.php) ... */
+@media (max-width: 992px) {
+    .transaksi-grid {
+    grid-template-columns: 1fr;
+    }
+    .modal-content {
+    margin: 10% auto;
+    padding: 25px;
+    }
+}
+
+/* ===============================================
+    STYLING KONTEN DASHBOARD FINAL
+=============================================== */
+.content-box {
+    /* Hapus semua styling kartu di sini, karena sudah ada di .dashboard-card */
+    
+    padding: 0; /* <-- DISET NOL (atau hapus) */
+    background-color: transparent; /* <-- DISET TRANSPARAN */
+    box-shadow: none; /* <-- DISET NONE */
+    border: none; /* <-- DISET NONE */
+    
+    margin-bottom: 20px; /* Jarak antar kotak tetap */
+}
+/* Style untuk Ikon Tips */
+.tip-icon {
+    font-size: 1.8rem; /* Ukuran ikon lebih besar */
+    color: var(--color-dark); /* Warna ikon sesuai brand */
+    min-width: 30px; /* Pastikan ikon tidak bergeser */
+    text-align: center;
+}
+
+/* KARTU PETA & KONTAK */
+.map-contact-box {
+    margin-bottom: 20px;
+    padding: 0 !important; /* Hapus padding kartu utama agar peta menempel di pinggir */
+    overflow: hidden; /* Sembunyikan sudut peta yang keluar */
+}
+
+/* Pastikan judul peta sudah ada di .box-title */
+.map-contact-box .box-title {
+    padding: 20px 20px 10px 20px;
+    margin-bottom: 0; 
+}
+.main-layout {
+    display: grid;
+    /* Ubah grid-template: sidebar hanya 240px, navbar 80px */
+    grid-template-areas:
+        "sidebar navbar"
+        "sidebar content";
+    grid-template-columns: 240px 1fr;
+    grid-template-rows: 80px 1fr; /* Navbar 80px tinggi */
+    
+    /* PERBAIKAN DI SINI */
+    height: 100vh; 
+    overflow: hidden; 
+    min-height: 100vh;
+    background-color: var(--color-bg); 
+}
+
+.content-wrapper {
+    grid-area: content;
+    /* Atur padding: Atas 0px, Samping/Bawah 24px */
+    padding: 0 24px 24px 24px; 
+    overflow-y: auto;
+}
+
+/* --- NAVBAR --- */
+.navbar {
+    grid-area: navbar;
+    display: flex;
+    justify-content: flex-end; /* Posisikan ke kanan */
+    align-items: center;
+    padding: 0 24px;
+    background-color: var(--color-white);
+    border-bottom: 1px solid #eee;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.profile-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--color-medium);
+    color: var(--color-white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+/* --- SIDEBAR --- */
+.sidebar {
+    grid-area: sidebar;
+    background-color: var(--color-dark); /* HIJAU TOSCA GELAP */
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    color: var(--color-white);
+}
+
+.sidebar .logo {
+    padding: 18px 24px;
+    display: flex; /* Agar logo bisa diatur */
+    justify-content: center; /* Pusatkan horizontal */
+    align-items: center; /* Pusatkan vertikal */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+.sidebar .logo img {
+    max-width: 80%; /* Atur ukuran logo agar proporsional */
+    height: auto;
+    /* Hilangkan style display: none jika ada dari kode lama */
+}
+
+.sidebar nav {
+    flex-grow: 1;
+    padding: 20px 0;
+}
+
+.sidebar nav a {
+    display: block;
+    padding: 12px 24px;
+    color: var(--color-sidebar-link); /* Warna Teks Link */
+    text-decoration: none;
+    font-size: 1.3rem;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.sidebar nav a:hover,
+.sidebar nav a.active {
+    background-color: var(--color-medium); /* Warna Saat Aktif/Hover */
+    color: var(--color-white);
+    border-left: 5px solid var(--color-light); /* Garis penanda aktif */
+    padding-left: 19px; /* Sesuaikan padding agar terlihat rapi setelah garis */
+}
+
+/* --- KARTU KONTEN --- */
+.dashboard-card {
+    background-color: var(--color-white);
+    padding: 24px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    margin-bottom: 24px;
+}
+
+/* ===============================================
+    STYLING MODAL LOGOUT
+=============================================== */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Background lebih gelap */
+    display: none; /* Sembunyikan secara default */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Pastikan modal di atas semua elemen lain */
+}
+
+.modal-card {
+    background-color: var(--color-white);
+    padding: 32px;
+    border-radius: 12px;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.4);
+    text-align: center;
+    max-width: 350px;
+}
+
+.modal-card h3 {
+    margin-top: 0;
+    margin-bottom: 25px;
+    color: var(--color-text);
+}
+
+.modal-buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.modal-btn {
+    flex: 1;
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    font-size: 0.95rem;
+}
+
+.modal-btn-ya {
+    background-color: var(--color-dark); /* Hijau Tosca Gelap */
+    color: var(--color-white);
+    border: none;
+}
+.modal-btn-ya:hover {
+    background-color: #028a7c;
+}
+
+.modal-btn-tidak {
+    background-color: #ccc; /* Abu-abu terang */
+    color: var(--color-text);
+    border: none;
+}
+.modal-btn-tidak:hover {
+    background-color: #bbb;
+}
+
+/* --- Styling Kartu Khusus Baru --- */
+
+.custom-content-box {
+    background-color: var(--color-white);
+    padding: 24px; 
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); /* Memberikan efek kartu terpisah */
+    margin-bottom: 24px; /* <--- Jarak vertikal antar kotak */
+    border: 1px solid #eee; 
+}
+
+/* Styling Khusus untuk Box 2 (Map) */
+.map-location-box {
+    padding: 0;
+    /* Ganti margin-top menjadi lebih besar atau tambahkan !important */
+    margin-top: 30px !important; 
+    overflow: hidden; 
+    text-align: center;
+}
+.map-location-box .box-title {
+    padding: 24px; /* Tambahkan padding di judul peta */
+    border-bottom: 1px solid #eee;
+    margin-bottom: 0;
+}
+/* --- Tambahkan Clear Fix untuk Memaksa Pemisahan Vertikal --- */
+.clearfix {
+    clear: both;
+    margin-bottom: 24px; /* Tambahkan margin vertikal yang kuat */
+    width: 0;
+    height: 0;
+}
+
+/* --- Override Pemusatan Teks Footer dan Alamat --- */
+
+/* Memastikan teks alamat fisik rata tengah */
+.map-location-box p {
+    text-align: center !important; 
+}
+
+/* Memastikan teks footer kontak rata tengah */
+.contact-footer-bar p {
+    text-align: center !important;
+    text-align: center;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* ===============================================
+    STYLING TABEL & BUTTONS CRUD ADMIN
+=============================================== */
+
+/* --- TABLE STYLING --- */
+.table {
+    width: 100%;
+    border-collapse: collapse; /* Menghilangkan spasi antar border */
+    margin-top: 20px;
+    font-size: 0.95rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05); /* Bayangan halus pada tabel */
+    border-radius: 8px;
+    overflow: hidden; /* Penting untuk rounded corners pada header */
+}
+
+.table thead th {
+    background-color: var(--color-dark); /* Hijau Tosca Gelap */
+    color: var(--color-white);
+    padding: 12px 15px;
+    text-align: left;
+    font-weight: 600;
+}
+
+.table tbody td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #eee;
+    vertical-align: middle;
+}
+
+.table tbody tr:nth-child(even) {
+    background-color: #fcfcfc; /* Warna latar belakang selang-seling */
+}
+
+.table tbody tr:hover {
+    background-color: #f0f0f0; /* Efek hover pada baris */
+}
+
+/* --- BUTTONS/ACTIONS STYLING --- */
+.table .btn, .table a { /* Targetkan tombol dan tautan di dalam tabel */
+    display: inline-block;
+    padding: 6px 12px;
+    margin-right: 5px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.3s;
+    font-size: 0.85rem;
+    border: none;
+    cursor: pointer;
+}
+
+/* Warna untuk tombol Lihat (Info) */
+.table .btn-info, .table .btn-info a,
+.table a:contains("Lihat") { /* Menargetkan tautan "Lihat" */
+    background-color: var(--color-medium);
+    color: var(--color-white);
+    text-decoration: none;
+}
+.table .btn-info:hover, .table a:contains("Lihat"):hover {
+    background-color: #5bb5b5;
+}
+
+/* Warna untuk tombol Edit (Warning) */
+.table .btn-warning, .table a:contains("Edit") {
+    background-color: #ffc107; /* Kuning */
+    color: #333;
+    text-decoration: none;
+}
+.table .btn-warning:hover, .table a:contains("Edit"):hover {
+    background-color: #e0a800;
+}
+
+/* Warna untuk tombol Hapus (Danger) */
+.table .btn-danger, .table button:contains("Hapus") {
+    background-color: #dc3545; /* Merah */
+    color: var(--color-white);
+}
+.table .btn-danger:hover, .table button:contains("Hapus"):hover {
+    background-color: #c82333;
+}
+
+/* Link Tambah Pengguna Baru (Di luar tabel) */
+.custom-content-box a:not(.table a) {
+    color: var(--color-dark);
+    font-weight: 600;
+    text-decoration: underline;
+    margin-top: 15px;
+    display: inline-block;
+}
+/* Targetkan tautan Edit dan tombol Hapus di panel kiri */
+.profile-left-actions a.btn-primary {
+    /* Atribut Umum */
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    width: 100%;
+    
+    /* Padding diubah agar simetris: 10px atas/bawah, 20px kiri/kanan */
+    padding: 10px 1px; 
+    margin-bottom: 10px;
+    
+    /* Warna yang Benar dan Paksa Penerapan */
+    background-color: var(--color-dark); /* Hijau Tosca Gelap */
+    color: var(--color-white) !important; /* <-- GANTI KE VAR PUTIH & TAMBAH !IMPORTANT */
+    text-decoration: none !important; /* <-- HAPUS GARIS BAWAH & TAMBAH !IMPORTANT */
+    
+    /* Style Lainnya */
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.profile-left-actions button.btn-danger {
+    display: block; /* Membuat tombol/link menjadi elemen blok */
+    width: 100%;
+    padding: 7px 20px;
+    margin-bottom: 10px; /* Jarak antara tombol */
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    line-height: 1.5; 
+}
+
+/* Reset margin bawah pada form agar tombol Hapus tidak terlalu jauh */
+.profile-left-actions form {
+    margin-bottom: 0; 
+}
+
+/* --- Warna --- */
+.profile-left-actions button.btn-danger { /* Tombol Hapus Profil */
+    background-color: #dc3545; /* Merah standar */
+    color: var(--color-white);
+}
+
+/* Efek Hover */
+.profile-left-actions a.btn-primary:hover {
+    background-color: #028a7c;
+}
+.profile-left-actions button.btn-danger:hover {
+    background-color: #a02a35;
+}
+/* ===============================================
+    STYLING DETAIL PROFIL ADMIN (users.show)
+=============================================== */
+
+/* Container Utama */
+.profile-detail-box {
+    padding: 30px;
+}
+
+.profile-layout-wrapper {
+    display: flex;
+    gap: 40px; /* Jarak antara kolom kiri dan kanan */
+    align-items: flex-start; /* Konten dimulai dari atas */
+}
+
+/* --- KIRI: AVATAR DAN TOMBOL AKSI --- */
+.profile-left-actions {
+    text-align: center;
+    min-width: 180px; 
+}
+
+.profile-avatar-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 5px solid var(--color-medium); /* Border sesuai brand */
+}
+
+/* Styling untuk tombol Edit/Hapus */
+.profile-actions .btn {
+    display: block;
+    width: 100%;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+    border: none;
+    cursor: pointer;
+}
+
+.profile-actions .btn-primary { /* Tombol Edit Profil */
+    background-color: var(--color-dark);
+    color: var(--color-white);
+}
+.profile-actions .btn-danger { /* Tombol Hapus Profil */
+    background-color: #dc3545;
+    color: var(--color-white);
+}
+
+/* --- KANAN: DETAIL DATA --- */
+.profile-right-details {
+    flex-grow: 1; 
+}
+
+/* Style untuk setiap baris data */
+.profile-right-details p {
+    margin-bottom: 12px;
+    font-size: 1.05rem;
+    line-height: 1.4;
+    border-bottom: 1px dashed #eee; /* Garis tipis pemisah */
+    padding-bottom: 8px;
+}
+
+.profile-right-details strong {
+    font-weight: 700;
+    color: var(--color-dark); /* Warna Hijau Tosca untuk Label */
+    display: inline-block;
+    min-width: 150px; /* Pastikan label sejajar */
+}
+
+/* Tambahan: Pastikan alert box terlihat bagus */
+.alert-success {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #c3e6cb;
+    background-color: #d4edda;
+    color: #155724;
+    border-radius: 5px;
+}
+
+.avatar-placeholder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: var(--color-accent); /* Menggunakan warna aksen yang lebih terang */
+    color: var(--color-white);
+    font-size: 3.5rem; /* Sedikit lebih kecil agar lebih proporsional */
+    font-weight: bold;
+    margin-bottom: 20px;
+    border: 5px solid var(--color-medium); /* Tetap dengan border medium */
+    text-transform: uppercase;
+}
+
+/* ===============================================
+    STYLING DASHBOARD PASIEN (Dual Column)
+=============================================== */
+
+.dashboard-grid {
+    display: flex;
+    gap: 25px; /* Jarak antara kolom kiri dan kanan */
+    align-items: flex-start; /* Pastikan kolom dimulai dari atas */
+}
+
+.tips-column {
+    flex: 3; /* Kolom Tips mengambil 3/4 ruang (70-75%) */
+    min-width: 0;
+}
+
+.map-contact-column {
+    flex: 1; /* Kolom Map mengambil 1/4 ruang (25-30%) */
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Jarak antara Map Box dan Contact Box */
+}
+
+/* Penyesuaian Map Box agar pas di kolom kecil */
+.map-contact-column .custom-content-box {
+    padding: 0; /* Hapus padding untuk Map Box */
+}
+
+/* Styling untuk Contact Box agar mirip dengan sidebar */
+.map-contact-column .contact-footer-bar {
+    background-color: var(--color-dark); 
+    color: var(--color-white);
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.map-contact-column .contact-footer-bar a {
+    color: var(--color-light); /* Link lebih terang agar terlihat di background gelap */
+    text-decoration: none;
+}
+
+/* Media Query untuk tampilan mobile */
+@media (max-width: 992px) {
+    .dashboard-grid {
+        flex-direction: column; /* Ubah menjadi vertikal di tablet/mobile */
+    }
+    .tips-column, .map-contact-column {
+        flex: none;
+        width: 100%;
+    }
+}
+/* ===============================================
+    STYLING KHUSUS UNTUK CARI DOKTER
+=============================================== */
+/* ===============================================
+ * 1. GAYA TAB FILTER (Diperbarui agar terlihat seperti card)
+ * =============================================== */
+.filter-tabs {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 30px;
+    padding: 10px;
+    /* Optional: Memberi background ringan pada area tabs */
+    /* background-color: var(--color-bg-light); */
+    /* border-radius: 15px; */
+    overflow-x: auto; 
+    white-space: nowrap;
+}
+
+.tab-button {
+    /* Mengubah A menjadi tombol visual */
+    display: inline-block; 
+    text-align: center;
+    text-decoration: none; 
+    background-color: var(--color-white);
+    color: var(--color-text);
+    padding: 10px 25px;
+    border: 1px solid #ddd; 
+    border-radius: 25px; /* Bentuk kapsul */
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    flex-shrink: 0;
+}
+
+.tab-button:hover {
+    background-color: var(--color-accent);
+}
+
+/* Gaya untuk Tab yang sedang AKTIF */
+.tab-button.active {
+    background-color: var(--color-dark); 
+    color: var(--color-white);
+    border-color: var(--color-dark);
+    font-weight: 600;
+}
+
+
+/* ===============================================
+ * 2. TATA LETAK GRID DOKTER (2 KOLOM)
+ * =============================================== */
+.doctor-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 25px;
+    padding: 10px;
+}
+
+
+/* ===============================================
+ * 3. GAYA KARTU DOKTER BARU (Lebih tebal dan rounded)
+ * =============================================== */
+.doctor-card {
+    display: flex;
+    padding: 20px;
+    /* Sudut yang lebih bulat */
+    border-radius: 20px; 
+    background-color: var(--color-white);
+    /* Border tebal dan aksen hijau */
+    border: 2px solid var(--color-light); 
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.doctor-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    border-color: var(--color-medium); /* Warna border berubah saat hover */
+}
+
+/* --- BAGIAN KIRI (Avatar & Harga) --- */
+.card-avatar-section {
+    flex-shrink: 0;
+    width: 80px;
+    text-align: center;
+    padding-right: 80px;
+    padding-left:40px;
+    /* Garis pembatas vertikal */
+    border-right: 1px solid var(--color-accent);
+}
+
+/* KONTROL AVATAR BARU */
+.doctor-avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin: 0 auto 10px auto;
+    
+    /* Properti dasar untuk SVG */
+    background-size: 70%; /* Ukuran ilustrasi di dalam lingkaran */
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    border: 3px solid var(--color-white); /* Garis luar putih agar lebih menonjol */
+    box-shadow: 0 0 0 2px var(--color-light); /* Garis aksen tipis */
+}
+
+/* Gaya Avatar Seragam (UNIFORM) */
+.doctor-avatar.avatar-uniform {
+    /* Menggunakan warna biru cerah seragam */
+    background-color: var(--color-avatar-male-bg); 
+    /* Menggunakan ikon Pria/Dokter Umum sebagai ikon seragam */
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23FFFFFF' d='M12 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM12 14c-4.42 0-8 1.79-8 4v2h16v-2c0-2.21-3.58-4-8-4z'/%3E%3C/svg%3E");
+}
+
+/* Hapus kelas spesifik gender yang tidak terpakai (dijaga agar tidak error jika ada referensi) */
+/* .doctor-avatar.avatar-female { ... } */
+/* .doctor-avatar.avatar-male { ... } */
+/* .doctor-avatar.avatar-default { ... } */
+
+
+.card-price {
+    /* Gaya untuk Harga */
+    font-weight: 00;
+    font-size: 1rem;
+    color: var(--color-dark);
+    margin-top: 5px;
+}
+
+/* --- BAGIAN KANAN (Info & Tombol) --- */
+.card-info-section {
+    flex-grow: 1;
+    padding-left: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-info-section h3 {
+    margin: 0;
+    font-size: 1.3rem;
+    color: var(--color-dark);
+    font-weight: 700;
+}
+
+.doctor-specialty {
+    margin: 3px 0 10px 0;
+    font-size: 1rem;
+    color: var(--color-medium);
+    font-weight: 600;
+}
+
+
+/* --- Tombol "Chat Sekarang" --- */
+.card-action-button {
+    display: inline-block;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s;
+    
+    background-color: var(--color-dark); 
+    color: var(--color-white); 
+    margin-top: 10px; /* Jarak dari spesialisasi */
+    
+    /* PERBAIKAN: Batasi lebar tombol sebatas konten */
+    width: fit-content; 
+    align-self: flex-start; /* Posisikan tombol ke kiri di dalam flex container */
+}
+
+.card-action-button:hover {
+    background-color: var(--color-medium); 
+}
+
+
+/* ===============================================
+ * 4. MEDIA QUERY (Responsif)
+ * =============================================== */
+@media (max-width: 800px) {
+    .doctor-grid {
+        /* Di layar kecil, ubah menjadi 1 kolom */
+        grid-template-columns: 1fr; 
+    }
+    
+    .doctor-card {
+        /* Di layar sangat kecil, buat konten di dalam card menjadi vertikal */
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .card-avatar-section {
+        /* Hapus border vertikal dan tambahkan padding bawah */
+        border-right: none;
+        padding-right: 0;
+        border-bottom: 1px solid var(--color-accent);
+        padding-bottom: 15px;
+        margin-bottom: 15px;
+        width: 100%;
+    }
+
+    .card-info-section {
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .card-action-button {
+        /* Kembalikan 100% width agar mudah disentuh di mobile */
+        width: 100%;
+        margin-top: 15px;
+        align-self: center; /* Posisikan tombol di tengah di mode mobile */
+    }
+    
+    .filter-tabs {
+        justify-content: flex-start;
+    }
+}
+
+/* resources/css/style.css */
+
+/* 7. Styling Khusus Detail Dokter         */
+/* ======================================= */
+
+/* Mengganti Shadow Card Utama (opsional, jika shadow-2xl Tailwind dirasa kurang) */
+.dokter-detail-card {
+    /* Kelas ini harus ditambahkan ke div card utama di dokter_detail.blade.php */
+    /* Contoh: <div class="bg-white p-8 rounded-xl shadow-2xl border-t-8 border-teal-500 dokter-detail-card"> */
+    box-shadow: 0 10px 20px rgba(255, 254, 254, 0.1), 0 6px 6px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease-in-out;
+    justify-content: center;
+    font-size: 12px;
+    background-color: #f0f0f0;
+    padding: 20px 30px;
+}
+
+/* Hover effect pada card utama */
+.dokter-detail-card:hover {
+    transform: translateY(-3px);
+}
+
+
+/* Styling Slot Waktu Janji (Memperjelas interaksi) */
+/* Ini adalah kelas pelengkap untuk peer-checked di Blade */
+.jadwal-slot {
+    /* Kelas yang diterapkan pada <span class="..."> di pemilihan jam */
+    cursor: pointer;
+    user-select: none;
+}
+
+/* Animasi untuk pemilihan jam */
+.peer-checked ~ .jadwal-slot {
+    animation: pulse-check 0.3s ease-out;
+}
+
+@keyframes pulse-check {
+    0% { transform: scale(0.95); opacity: 0.8; }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+/* Styling Riwayat Pendidikan dan No STR (Box Informasi) */
+.info-box {
+    /* Kelas yang diterapkan pada <p class="text-gray-700 bg-gray-100 p-3 rounded-lg border info-box"> */
+    border-left: 2px solid var(--color-primary); /* Garis teal di kiri */
+    background-color: #f7f9fb; /* Warna abu-abu yang sangat terang */
+}
+
+/* Hover pada Metode Pembayaran (Membuatnya terasa interaktif) */
+.payment-label:hover {
+    /* Kelas yang diterapkan pada <label class="flex items-center cursor-pointer bg-gray-50 p-4 rounded-lg border border-gray-200 payment-label"> */
+    transform: scale(1.02);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.payment-label {
+    transition: all 0.2s ease;
+}
+
+/* ==================================== */
+/* 1. Kontainer Utama dan Judul */
+/* ==================================== */
+.riwayat-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.riwayat-container h1 {
+    font-size: 2em;
+    font-weight: bold;
+    color: #1f2937; /* Gray-800 */
+    margin-bottom: 20px;
+    border-bottom: 4px solid #00a69a; /* Teal-500 */
+    padding-bottom: 8px;
+}
+
+/* ==================================== */
+/* 2. Card Pembungkus Tabel */
+/* ==================================== */
+.riwayat-card {
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0; /* Gray-200 */
+    border-radius: 12px;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); /* Shadow-2xl */
+    padding: 20px;
+}
+
+.riwayat-card h2 {
+    font-size: 1.25em;
+    font-weight: 600;
+    color: #374151; /* Gray-700 */
+    margin-bottom: 15px;
+}
+
+/* ==================================== */
+/* 3. Styling Tabel */
+/* ==================================== */
+.riwayat-table-wrapper {
+    overflow-x: auto;
+}
+
+.riwayat-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.riwayat-table thead {
+    background-color: #f0fdfa; /* Teal-50 */
+}
+
+.riwayat-table th {
+    padding: 12px 24px;
+    text-align: left;
+    font-size: 0.75em; /* xs */
+    font-weight: 500;
+    color: #0d9488; /* Teal-700 */
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    border-bottom: 1px solid #e5e7eb; /* Gray-200 */
+}
+
+.riwayat-table td {
+    padding: 16px 24px;
+    font-size: 0.875em; /* sm */
+    color: #374151; /* Gray-700 */
+    white-space: nowrap;
+    border-bottom: 1px solid #f3f4f6; /* Gray-100 */
+}
+
+.riwayat-table tbody tr:hover {
+    background-color: #f0fdfa; /* Light hover effect */
+    transition: background-color 0.15s ease-in-out;
+}
+
+.nominal-text {
+    font-weight: bold;
+    color: #0d9488; /* Teal-700 */
+}
+
+/* ==================================== */
+/* 4. Styling Status (Badge) */
+/* ==================================== */
+.status-badge {
+    display: inline-flex;
+    padding: 4px 12px;
+    font-size: 0.75em;
+    font-weight: 600;
+    border-radius: 9999px; /* rounded-full */
+    line-height: 1;
+}
+
+.status-pending {
+    background-color: #fef3c7; /* Yellow-100 */
+    color: #92400e; /* Yellow-800 */
+}
+
+.status-confirmed {
+    background-color: #d1fae5; /* Green-100 */
+    color: #065f46; /* Green-800 */
+}
+
+/* ==================================== */
+/* 5. Styling Tombol Aksi */
+/* ==================================== */
+.action-btn {
+    display: inline-block;
+    padding: 6px 12px;
+    font-size: 0.875em;
+    font-weight: bold;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: background-color 0.15s ease-in-out;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06); /* Shadow-md */
+}
+
+.btn-payment {
+    background-color: #f59e0b; /* Yellow-500 */
+    color: #ffffff;
+}
+
+.btn-payment:hover {
+    background-color: #d97706; /* Yellow-600 */
+}
+
+.btn-consult {
+    background-color: #0d9488; /* Teal-600 */
+    color: #ffffff;
+}
+
+.btn-consult:hover {
+    background-color: #0f766e; /* Teal-700 */
+}
+
+/* ==================================== */
+/* 6. Styling Notifikasi dan Empty State */
+/* ==================================== */
+.alert-success {
+    background-color: #d1fae5; /* Green-100 */
+    border: 1px solid #34d399; /* Green-400 */
+    color: #065f46; /* Green-700 */
+    padding: 16px;
+    border-radius: 8px;
+    margin-bottom: 16px;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+.empty-state {
+    text-align: center;
+    padding: 40px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e2e8f0;
+}
+
+.empty-state p {
+    font-size: 1.125em;
+    color: #4b5563;
+}
+/* ==================================== */
+/* 4. Styling Status (Badge) - Tambahan */
+/* ==================================== */
+
+/* Status Selesai/Done */
+.status-done {
+    background-color: #d1fae5; /* Green-100 */
+    color: #065f46; /* Green-800 */
+}
+
+/* Status Batal/Canceled */
+.status-canceled {
+    background-color: #fee2e2; /* Red-100 */
+    color: #991b1b; /* Red-800 */
+}
+
+
+/* ==================================== */
+/* 5. Styling Tombol Aksi - Tambahan */
+/* ==================================== */
+
+/* Styling untuk dua tombol dalam satu sel tabel */
+.riwayat-table td > div {
+    display: flex;
+    gap: 8px; /* Spasi antar tombol */
+    justify-content: center;
+}
+
+/* Tombol Lihat Diagnosa (Biru) */
+.btn-view-secondary {
+    background-color: #3b82f6; /* Blue-500 */
+    color: #ffffff;
+}
+
+.btn-view-secondary:hover {
+    background-color: #2563eb; /* Blue-600 */
+}
+
+/* Tombol Lihat Resep (Emerald Green) */
+.btn-view-primary {
+    background-color: #10b981; /* Emerald-500 */
+    color: #ffffff;
+}
+
+.btn-view-primary:hover {
+    background-color: #059669; /* Emerald-600 */
+}
+
+
+/* ==================================== */
+/* 5. Styling Tombol Aksi - Tambahan */
+/* ==================================== */
+
+/* Tombol Lihat Hasil Konsultasi (Biru Tua/Navy) */
+.btn-view-results {
+    /* Menerapkan styling dasar dari .action-btn */
+    display: inline-block;
+    padding: 6px 12px;
+    font-size: 0.875em;
+    font-weight: bold;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: background-color 0.15s ease-in-out;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+    
+    /* Warna spesifik untuk tombol ini */
+    background-color: #1e40af; /* Blue-800 */
+    color: #ffffff;
+}
+
+.btn-view-results:hover {
+    background-color: #1e3a8a; /* Blue-900 */
+}
+
+
+/* CARD UTAMA */
+.card-utama {
+    background-color: white;
+    padding: 2.5rem; /* p-10 */
+    border-radius: 1.5rem; /* rounded-3xl */
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04); /* shadow-2xl */
+    border-top: 8px solid #14b8a6; /* border-t-8 border-teal-500 */
+}
+
+/* JUDUL */
+.judul-halaman {
+    font-size: 2.25rem; /* text-4xl */
+    font-weight: 800; /* font-extrabold */
+    color: #1f2937; /* text-gray-900 */
+    margin-bottom: 2rem; /* mb-8 */
+    text-align: center;
+}
+.divider-line {
+    border: 0;
+    border-top: 1px solid #99f6e4; /* border-teal-200 */
+    margin-bottom: 2rem;
+}
+
+/* DETAIL DOKTER */
+.detail-dokter {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1.5rem; /* pb-6 */
+    border-bottom: 1px solid #e5e7eb; /* border-gray-200 */
+    margin-bottom: 1.5rem;
+}
+.detail-header {
+    width: 100%;
+    margin-top: 1.5rem;
+    padding-top: 0.5rem;
+}
+.nama-dokter {
+    font-size: 1.875rem; /* text-3xl */
+    font-weight: 800;
+    color: #1f2937;
+}
+.spesialisasi {
+    font-size: 1.25rem; /* text-xl */
+    font-weight: 500;
+    color: #047857; /* text-teal-600 */
+    margin-top: 0.25rem;
+    margin-bottom: 1.5rem;
+}
+.detail-box {
+    margin-bottom: 1.5rem;
+}
+.detail-title {
+    font-size: 1.25rem; /* text-xl */
+    font-weight: 700;
+    color: #1f2937;
+    margin-bottom: 0.5rem;
+}
+.detail-content {
+    color: #374151; /* text-gray-700 */
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    border: 1px solid #e5e7eb;
+}
+
+/* FORM UMUM */
+.form-pesanan {
+    padding-top: 1.5rem; /* pt-6 */
+}
+.form-group {
+    margin-bottom: 2rem; /* mb-8 */
+    padding-bottom: 1.5rem; /* pb-6 */
+    border-bottom: 1px solid #e5e7eb;
+}
+.payment-group {
+    border-top: 1px solid #e5e7eb;
+    padding-top: 1.5rem;
+}
+.form-title {
+    font-size: 1.5rem; /* text-2xl */
+    font-weight: 700;
+    color: #1f2937;
+    margin-bottom: 1rem; /* mb-4 */
+}
+.error-message {
+    color: #ef4444; /* text-red-500 */
+    font-size: 0.875rem;
+    margin-top: 0.5rem;
+}
+
+/* INPUT FIELD (KELUHAN) */
+.input-field {
+    width: 100%;
+    padding: 1rem;
+    color: #374151;
+    background-color: white;
+    border: 2px solid #d1d5db; /* border-gray-300 */
+    border-radius: 0.5rem;
+    transition: border-color 0.15s ease-in-out;
+}
+.input-field:focus {
+    outline: none;
+    border-color: #10b981; /* teal-500 */
+}
+.textarea-field {
+    resize: vertical; /* Hanya izinkan resize vertikal, bukan none */
+}
+
+/* SLOT JADWAL */
+.slot-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem; /* gap-4 */
+}
+.slot-label {
+    cursor: pointer;
+}
+.hidden-radio {
+    display: none;
+}
+.slot-item {
+    display: inline-block;
+    padding: 0.5rem 1.25rem; /* px-5 py-2 */
+    border-radius: 0.5rem;
+    font-size: 1.125rem; /* text-lg */
+    font-weight: 700;
+    transition: all 0.2s ease-in-out;
+    border: 2px solid #d1d5db; /* border-gray-300 */
+    background-color: white;
+    color: #374151;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06); /* shadow-md */
+}
+/* Style saat radio checked (peer-checked) */
+.hidden-radio:checked + .slot-item {
+    background-color: #059669; /* teal-600 */
+    color: white;
+    border-color: #059669;
+}
+.slot-item:hover {
+    border-color: #10b981; /* teal-500 */
+}
+.no-slot-message {
+    color: #ef4444; /* text-red-500 */
+    font-weight: 600;
+    padding: 0.75rem;
+    background-color: #fef2f2; /* bg-red-50 */
+    border-radius: 0.5rem;
+}
+
+/* NOMINAL KONSULTASI */
+.nominal-box {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background-color: #f0fdfa; /* teal-50 */
+    border-radius: 0.75rem; /* rounded-xl */
+    border: 1px solid #a7f3d0; /* border-teal-200 */
+    box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.06); /* shadow-inner */
+}
+.nominal-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #1f2937;
+    margin-bottom: 1rem;
+}
+.nominal-amount {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.25rem;
+    font-weight: 800;
+    color: #dc2626; /* red-600 */
+}
+
+/* METODE PEMBAYARAN */
+.payment-options {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem; /* space-y-3 */
+}
+.payment-label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    background-color: #f9fafb; /* gray-50 */
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: 1px solid #e5e7eb; /* gray-200 */
+    transition: border-color 0.15s ease-in-out;
+}
+.payment-label:hover {
+    border-color: #2dd4bf; /* teal-400 */
+}
+.radio-button {
+    height: 1.25rem; /* h-5 */
+    width: 1.25rem; /* w-5 */
+    color: #047857; /* teal-600 */
+}
+.payment-text {
+    margin-left: 0.75rem; /* ml-3 */
+    font-size: 1.125rem; /* text-lg */
+    font-weight: 500;
+    color: #374151;
+}
+
+/* TOMBOL SUBMIT */
+.btn-submit {
+    width: 100%;
+    text-align: center;
+    background-color: #047857; /* teal-600 */
+    color: white;
+    font-weight: 700;
+    padding-top: 1rem; /* py-4 */
+    padding-bottom: 1rem; /* py-4 */
+    border-radius: 0.5rem;
+    font-size: 1.25rem; /* text-xl */
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); /* shadow-xl */
+    transition: background-color 0.2s ease-in-out;
+}
+.btn-submit:hover {
+    background-color: #065f46; /* teal-700 */
+}
+
+/* Responsiveness sederhana untuk detail dokter */
+@media (min-width: 768px) {
+    .detail-dokter {
+        flex-direction: row;
+        gap: 3rem;
+    }
+}
+/* -------------------------------------------------------------------
+        GAYA RIWAYAT ULASAN (Namespaced: .riwayat-ulasan)
+        ------------------------------------------------------------------- */
+    
+.riwayat-ulasan {
+    background-color: white;
+    padding: 1.25rem; /* p-5 */
+    border-radius: 0.5rem; /* rounded-lg */
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.06);
+    border-top: 4px solid #14b8a6; /* Garis atas Teal */
+    margin-top: 30px;
+    
+}
+
+/* Judul */
+.riwayat-ulasan__title {
+    font-size: 1.5rem; /* text-2xl */
+    font-weight: 700;
+    color: #1f2937;
+    margin-bottom: 30px;
+    margin-top: -20px;
+    text-align: center;
+}
+
+/* Tombol Utama */
+.riwayat-ulasan__btn-teal {
+    background-color: #0d9488;
+    color: white;
+    font-weight: 600;
+    padding: 10px 15px; /* Lebih ringkas */
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+    
+    font-size: 1rem;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    /* CATATAN: Margin negatif dihilangkan atau disesuaikan jika ingin memperbaiki tata letak */
+    margin-left: 0; 
+}
+.riwayat-ulasan__btn-teal:hover {
+    background-color: #0f766e;
+}
+
+/* Alerts */
+.riwayat-ulasan__alert {
+    padding: 0.6rem 1rem;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid;
+    font-size: 0.875rem;
+}
+.riwayat-ulasan__alert--success {
+    background-color: #d1fae5;
+    border-color: #34d399;
+    color: #065f46;
+}
+.riwayat-ulasan__alert--error {
+    background-color: #fee2e2;
+    border-color: #f87171;
+    color: #b91c1c;
+}
+
+/* Empty State */
+.riwayat-ulasan__empty-state {
+    text-align: center;
+    padding: 1.5rem 0;
+    background-color: #f9fafb;
+    border-radius: 0.5rem;
+    box-shadow: inset 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+---
+
+/* 1. Tabel Container & Pengaturan Lebar Kolom (KRITIS) */
+.riwayat-ulasan__table-container {
+    overflow-x: auto; 
+    background-color: #ffffff;
+    border-radius: 0.5rem;
+}
+
+.riwayat-ulasan__table-container table {
+    table-layout: fixed; /* Memaksa kolom mengikuti lebar yang ditentukan */
+    width: 100%;
+}
+
+/* Tabel Header (thead) */
+.riwayat-ulasan__table-header {
+    background-color: #f0fdfa; /* Teal muda */
+}
+
+/* Tabel Header Cell (th) */
+.riwayat-ulasan__th {
+    padding: 5px 10px;
+    text-align: left;
+    font-size: 0.6875rem;
+    font-weight: 700;
+    color: #4b5563;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+/* 🎯 PEMBENAHAN KRITIS: Menentukan Lebar Kolom secara Proporsional */
+.riwayat-ulasan__table-header th:nth-child(1) { width: 5%; }  /* No (Sempit) */
+.riwayat-ulasan__table-header th:nth-child(2) { width: 25%; } /* Dokter (Cukup lebar) */
+.riwayat-ulasan__table-header th:nth-child(3) { width: 10%; } /* Rating (Sempit) */
+.riwayat-ulasan__table-header th:nth-child(4) { width: 35%; } /* Ulasan (Paling lebar) */
+.riwayat-ulasan__table-header th:nth-child(5) { width: 15%; } /* Tanggal */
+.riwayat-ulasan__table-header th:nth-child(6) { width: 10%; } /* Aksi (Sempit) */
+
+
+/* 2. Gaya Baris Data (tr) - Penambahan untuk kejelasan */
+.riwayat-ulasan__table-container table tbody tr {
+    border-bottom: 1px solid #f3f4f6; /* Garis pemisah antar baris */
+}
+.riwayat-ulasan__table-container table tbody tr:last-child {
+    border-bottom: none; /* Hilangkan garis di baris terakhir */
+}
+.riwayat-ulasan__table-container table tbody tr:hover {
+    background-color: #f9fafb; /* Efek hover ringan */
+}
+
+
+/* 3. Tabel Data Cell (td) */
+.riwayat-ulasan__td {
+    padding: 0.75rem 0.75rem; /* Padding sel lebih ringkas */
+    font-size: 0.8125rem;
+    color: #4b5563;
+    white-space: normal; /* KRITIS: Teks bisa melipat (wrap) */
+    word-wrap: break-word; /* Memastikan kata yang panjang pun terpotong */
+}
+
+.riwayat-ulasan__td--bold {
+    font-weight: 500;
+    color: #1f2937;
+}
+
+/* Rating Stars */
+.riwayat-ulasan__td--rating i {
+    color: #f59e0b;
+}
+
+.riwayat-ulasan__td--truncate {
+    overflow: hidden; 
+    text-overflow: ellipsis;
+    /* white-space: normal sudah diatur di .riwayat-ulasan__td */
+}
+
+.riwayat-ulasan__td--center {
+    text-align: center;
+}
+
+/* 4. Action Links */
+.riwayat-ulasan__action-link {
+    display: inline-block; /* Mempertahankan display inline-block */
+    margin: 0 0.4rem; 
+    font-weight: 500;
+    transition: color 0.2s;
+    text-decoration: none;
+    font-size: 0.8125rem;
+}
+
+/* Memastikan form di dalam td juga menjadi inline-block (jika menggunakan form untuk Hapus) */
+.riwayat-ulasan__td--center form.inline-block {
+    display: inline-block;
+}
+
+.riwayat-ulasan__action-link--edit {
+    color: #2563eb;
+}
+.riwayat-ulasan__action-link--edit:hover {
+    color: #1e40af;
+}
+
+.riwayat-ulasan__action-link--delete {
+    color: #dc2626;
+    margin: 0 0.4rem; /* Konsisten dengan Edit */
+}
+.riwayat-ulasan__action-link--delete:hover {
+    color: #991b1b;
+}
+
+/* Jika Hapus berupa tombol (seperti di gambar) */
+.riwayat-ulasan__btn-delete {
+    background-color: #ffffff;
+    color: #dc2626;
+    border: 1px solid #dc2626;
+    padding: 0.2rem 0.5rem; 
+    border-radius: 0.3rem;
+    font-size: 0.75rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s, color 0.2s;
+    margin-left: 0.5rem; 
+}
+
+.riwayat-ulasan__btn-delete:hover {
+    background-color: #fee2e2;
+    color: #b91c1c;
+    border-color: #f87171;
+}
