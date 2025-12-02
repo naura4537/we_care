@@ -5,7 +5,7 @@
     "builds": [
         { 
             "src": "api/index.php", 
-            "use": "@ardhani/vercel-php-bridge"
+            "use": "@spatie/vercel-php"
         }
     ],
 
